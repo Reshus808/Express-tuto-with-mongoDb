@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ejs use</title>
+    <style>
+      h1 {
+        color: orangered;
+      }
+    </style>
+</head>
+<body>
+<h1>
+    this is profile page <br>
+    name: <%= user.name %> <br>
+    email: <%= user.email %>
+    <% user.skills.forEach((skill) => { %>
+        <li><%= skill %></li>
+    <% }) %>
+</h1>
+</body>
+</html>
